@@ -1,0 +1,6 @@
+[{"id":1,"name":"Jessica","imageUrl":"http://localhost:3001/jessica.jpg","age":"24", "isMatch": false},
+  {"id":2,"name":"Susan","imageUrl":"http://localhost:3001/susan.jpg","age":"21", "isMatch": false},
+  {"id":3,"name":"Salma","imageUrl":"http://localhost:3001/salma.jpg","age":"32", "isMatch": false},
+  {"id":4,"name":"Angelina","imageUrl":"http://localhost:3001/angelina.jpg","age":"50", "isMatch": true},
+  {"id":5,"name":"Julia","imageUrl":"http://localhost:3001/julia.jpg","age":"45", "isMatch": false}
+]

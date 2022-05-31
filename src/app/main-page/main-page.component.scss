@@ -1,0 +1,48 @@
+.main {
+  width: 400px;
+  margin: 0 auto;
+
+  .photo-viewport {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+
+    img {
+      max-width: 400px;
+    }
+
+    .name {
+      background: rgba(27,27,27,0.3);
+      position: absolute;
+      bottom: 1em;
+      padding: 0.5em 1em;
+      width: 100%;
+      box-sizing: border-box;
+
+      h3 {
+        color: white;
+        font-size: 2em;
+        margin: 0;
+      }
+    }
+
+    .profile-message {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0,0,0,0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        color: white;
+        font-size: 3em;
+      }
+    }
+  }
+
+
+}

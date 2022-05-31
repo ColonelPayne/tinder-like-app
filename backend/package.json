@@ -1,0 +1,13 @@
+{
+  "name": "backend-test-app",
+  "version": "1.0.0",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.0",
+    "express-fileupload": "^1.2.1",
+    "forever": "^4.0.3"
+  },
+  "scripts": {
+    "start": "forever start app.js -l forever.log -o out.log -e err.log my-daemon.js forever stop my-daemon.js"
+  }
+}

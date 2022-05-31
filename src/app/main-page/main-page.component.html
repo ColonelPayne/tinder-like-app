@@ -1,0 +1,36 @@
+<!--## Main section-->
+
+<ng-container *ngIf="currentProfile">
+  <mat-card class="main">
+    <mat-card-content class="photo-viewport">
+      <img [src]="currentProfile.imageUrl" />
+      <div class="name">
+        <h3>{{ currentProfile.name }}, {{ currentProfile.age }}</h3>
+      </div>
+      <ng-container *ngIf="isProfilesEmpty">
+        <div class="profile-message">
+          <p>Profiles is no more</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="currentProfile.isMatch && !isProfilesEmpty">
+        <div class="profile-message mat-background-accent">
+          <p>You got match!</p>
+        </div>
+      </ng-container>
+    </mat-card-content>
+    <mat-card-actions class="buttons">
+      <ng-container *ngIf="!isProfilesEmpty">
+        <button mat-raised-button color="primary" (click)="getNextProfile(currentIndex + 1)">Like</button>
+        <button mat-raised-button color="warn" (click)="getNextProfile(currentIndex + 1)"
+                *ngIf="!currentProfile.isMatch">Dislike</button>
+      </ng-container>
+      <ng-container *ngIf="isProfilesEmpty">
+        <button mat-raised-button color="primary" (click)="getNextProfile(0)">Okay</button>
+      </ng-container>
+      <ng-container *ngIf="currentProfile.isMatch  && !isProfilesEmpty">
+        <button mat-raised-button color="primary" (click)="getNextProfile(currentIndex + 1)">Okay</button>
+      </ng-container>
+    </mat-card-actions>
+  </mat-card>
+</ng-container>
+
