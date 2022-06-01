@@ -38,12 +38,12 @@ Get all profiles
 # GET /api/profiles
 $ curl http://localhost:3001/api/profiles
  
- > {
+ > [{
  >   "id":1,
  >   "name":"Jessica",
  >   "imageUrl":"http://localhost:3001/jessica.jpg",
  >   "age":"24", 
  >   "isMatch": false
- > }
+ > },
 ```
 
