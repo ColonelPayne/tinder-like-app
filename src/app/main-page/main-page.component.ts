@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 export class MainPageComponent implements OnInit {
 
   allProfiles: IProfile[] = [];
-  currentProfile: any;
+  currentProfile: IProfile;
   currentIndex: number = 0;
   isProfilesEmpty: boolean = false;
 
